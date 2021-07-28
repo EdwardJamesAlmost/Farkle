@@ -17,6 +17,7 @@ class Dice
     /// <returns>Dice</returns>
     public void rollDice()
     {
+        Console.WriteLine("Roll Die");
         Random rnd = new Random();
         FaceValue = rnd.Next(1, 6);
         
@@ -33,7 +34,7 @@ class Dice
     /// <param name="aDie"></param>
     public void displayDieFace()
     {
-        //Console.WriteLine($"Die face: {FaceValue}");
+        Console.WriteLine($"die is showing {FaceValue}");
     }  // writes the face of a single die to the console
 
     public override String ToString()
@@ -42,6 +43,7 @@ class Dice
         return faceValue;
     } // override to string method
 
+    
     
 
 } // end die class
